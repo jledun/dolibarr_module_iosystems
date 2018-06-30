@@ -90,9 +90,9 @@ class modiosystems extends DolibarrModules
 									'substitutions' => 1,                            	// Set this to 1 if module has its own substitution function file (core/substitutions)
 									'menus' => 0,                                    	// Set this to 1 if module has its own menus handler directory (core/menus)
 									'theme' => 0,                                    	// Set this to 1 if module has its own theme directory (theme)
-		                        	'tpl' => 0,                                      	// Set this to 1 if module overwrite template dir (core/tpl)
+		                        	'tpl' => 1,                                      	// Set this to 1 if module overwrite template dir (core/tpl)
 									'barcode' => 0,                                  	// Set this to 1 if module has its own barcode directory (core/modules/barcode)
-									'models' => 0,                                   	// Set this to 1 if module has its own models directory (core/modules/xxx)
+									'models' => 1,                                   	// Set this to 1 if module has its own models directory (core/modules/xxx)
 									'css' => array('/iosystems/css/iosystems.css.php'),	// Set this to relative path of css file if module has its own css file
 	 								'js' => array('/iosystems/js/iosystems.js.php'),          // Set this to relative path of js file if module must load a js on all pages
 									'hooks' => array('data'=>array('hookcontext1','hookcontext2'), 'entity'=>'0') 	// Set here all hooks context managed by module. To find available hook context, make a "grep -r '>initHooks(' *" on source code. You can also set hook context 'all'
@@ -185,7 +185,7 @@ class modiosystems extends DolibarrModules
         // Boxes/Widgets
 		// Add here list of php file(s) stored in iosystems/core/boxes that contains class to show a widget.
         $this->boxes = array(
-        	0=>array('file'=>'iosystemswidget1.php@iosystems','note'=>'Widget provided by iosystems','enabledbydefaulton'=>'Home'),
+        	// 0=>array('file'=>'iosystemswidget1.php@iosystems','note'=>'Widget provided by iosystems','enabledbydefaulton'=>'Home'),
         	//1=>array('file'=>'iosystemswidget2.php@iosystems','note'=>'Widget provided by iosystems'),
         	//2=>array('file'=>'iosystemswidget3.php@iosystems','note'=>'Widget provided by iosystems')
         );
@@ -194,7 +194,7 @@ class modiosystems extends DolibarrModules
 		// Cronjobs (List of cron jobs entries to add when module is enabled)
 		// unit_frequency must be 60 for minute, 3600 for hour, 86400 for day, 604800 for week
 		$this->cronjobs = array(
-			0=>array('label'=>'MyJob label', 'jobtype'=>'method', 'class'=>'/iosystems/class/myobject.class.php', 'objectname'=>'MyObject', 'method'=>'doScheduledJob', 'parameters'=>'', 'comment'=>'Comment', 'frequency'=>2, 'unitfrequency'=>3600, 'status'=>0, 'test'=>true)
+			// 0=>array('label'=>'MyJob label', 'jobtype'=>'method', 'class'=>'/iosystems/class/myobject.class.php', 'objectname'=>'MyObject', 'method'=>'doScheduledJob', 'parameters'=>'', 'comment'=>'Comment', 'frequency'=>2, 'unitfrequency'=>3600, 'status'=>0, 'test'=>true)
 		);
 		// Example: $this->cronjobs=array(0=>array('label'=>'My label', 'jobtype'=>'method', 'class'=>'/dir/class/file.class.php', 'objectname'=>'MyClass', 'method'=>'myMethod', 'parameters'=>'param1, param2', 'comment'=>'Comment', 'frequency'=>2, 'unitfrequency'=>3600, 'status'=>0, 'test'=>true),
 		//                                1=>array('label'=>'My label', 'jobtype'=>'command', 'command'=>'', 'parameters'=>'param1, param2', 'comment'=>'Comment', 'frequency'=>1, 'unitfrequency'=>3600*24, 'status'=>0, 'test'=>true)
