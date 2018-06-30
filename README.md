@@ -1,17 +1,19 @@
 # IOSYSTEMS FOR <a href="https://www.dolibarr.org">DOLIBARR ERP CRM</a>
 
 ## Features
-Description...
 
+### a pdf template for budget proposal
+
+(where the cost is global)
+
+based on azur template from ATM consulting
 <!--
 ![Screenshot iosystems](img/screenshot_iosystems.png?raw=true "iosystems"){imgmd}
 -->
 
-Other modules are available on <a href="https://www.dolistore.com" target="_new">Dolistore.com</a>.
 
 
-
-### Translations
+## Translations
 
 Translations can be define manually by editing files into directories [langs](langs). 
 
@@ -24,52 +26,15 @@ There is a [Transifex project](https://transifex.com/projects/p/dolibarr-module-
 -->
 
 
-<!--
 
-Install
--------
-
-### From the ZIP file and GUI interface
-
-- If you get the module in a zip file (like when downloading it from the market place [Dolistore](https://www.dolistore.com)), go into
-menu ```Home - Setup - Modules - Deploy external module``` and upload the zip file.
-
-
-Note: If this screen tell you there is no custom directory, check your setup is correct: 
-
-- In your Dolibarr installation directory, edit the ```htdocs/conf/conf.php``` file and check that following lines are not commented:
-
-    ```php
-    //$dolibarr_main_url_root_alt ...
-    //$dolibarr_main_document_root_alt ...
-    ```
-
-- Uncomment them if necessary (delete the leading ```//```) and assign a sensible value according to your Dolibarr installation
-
-    For example :
-
-    - UNIX:
-        ```php
-        $dolibarr_main_url_root_alt = '/custom';
-        $dolibarr_main_document_root_alt = '/var/www/Dolibarr/htdocs/custom';
-        ```
-
-    - Windows:
-        ```php
-        $dolibarr_main_url_root_alt = '/custom';
-        $dolibarr_main_document_root_alt = 'C:/My Web Sites/Dolibarr/htdocs/custom';
-        ```
-        
-### From a GIT repository
-
-- Clone the repository in ```$dolibarr_main_document_root_alt/iosystems```
+## Install
 
 ```sh
-cd ....../custom
-git clone git@github.com:gitlogin/iosystems.git iosystems
+cd htdocs/custom/
+git clone https://github.com/jledun/dolibarr_module_iosystems.git iosystems
 ```
 
-### <a name="final_steps"></a>Final steps
+## Activate the module iosystems
 
 From your browser:
 
@@ -78,23 +43,27 @@ From your browser:
   - You should now be able to find and enable the module
 
 
-
--->
-
-
 Licenses
 --------
 
-### Main code
+MIT License
 
-![GPLv3 logo](img/gplv3.png)
+Copyright (c) 2018 Julien Ledun
 
-GPLv3 or (at your option) any later version.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-See [COPYING](COPYING) for more information.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-#### Documentation
-
-All texts and readmes.
-
-![GFDL logo](img/gfdl.png)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

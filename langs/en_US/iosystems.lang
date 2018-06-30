@@ -20,7 +20,7 @@
 # Module label 'ModuleiosystemsName'
 ModuleiosystemsName = iosystems
 # Module description 'ModuleiosystemsDesc'
-ModuleiosystemsDesc = iosystems description
+ModuleiosystemsDesc = a module to customize the usage of dolibarr for IO Systems
 
 #
 # Admin page
@@ -28,10 +28,10 @@ ModuleiosystemsDesc = iosystems description
 iosystemsSetup = iosystems setup
 Settings = Settings
 iosystemsSetupPage = iosystems setup page
-IOSYSTEMS_MYPARAM1 = My param 1
-IOSYSTEMS_MYPARAM1Tooltip = My param 1 tooltip
-IOSYSTEMS_MYPARAM2=My param 2
-IOSYSTEMS_MYPARAM2Tooltip=My param 2 tooltip
+# IOSYSTEMS_MYPARAM1 = My param 1
+# IOSYSTEMS_MYPARAM1Tooltip = My param 1 tooltip
+# IOSYSTEMS_MYPARAM2=My param 2
+# IOSYSTEMS_MYPARAM2Tooltip=My param 2 tooltip
 
 
 #
@@ -44,10 +44,13 @@ iosystemsAboutPage = iosystems about page
 #
 # Sample page
 #
-MyPageName = My page name
+# MyPageName = My page name
 
 #
 # Sample widget
 #
-MyWidget = My widget
-MyWidgetDescription = My widget description
+# MyWidget = My widget
+# MyWidgetDescription = My widget description
+
+BudgetProposal = Budget Proposal
+
