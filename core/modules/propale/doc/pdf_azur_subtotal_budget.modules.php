@@ -70,8 +70,7 @@ class pdf_azur_subtotal_budget extends ModelePDFPropales
 
 		$this->db = $db;
 		$this->name = "azur_subtotal_budget";
-		// J'ajoute l'annotation "déprécié" mais à garder... des fois qu'un client avec une vieille version utilise les modèles PDF custom
-		$this->description = 'Modèle de proposition commerciale incluant des spécificités du module sous-total. (déprécié)';
+		$this->description = 'Modèle de devis fournissant une proposition budgétaire';
 
 		// Dimension page pour format A4
 		$this->type = 'pdf';
