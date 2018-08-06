@@ -63,6 +63,14 @@ class Actionsiosystems
 	    $this->db = $db;
 	}
 
+        public function formObjectOptions($parameters, &$object, &$action, $hookmanager) {
+          global $langs, $conf, $form;
+          $TContext = explode(':', $parameters['context']);
+          if (in_array('propalcard', TContext) || in_array('ordercard', $TContext)) {
+            print("<h1>Je suis gros</h1>");
+          }
+        }
+
 	/**
 	 * Overloading the doActions function : replacing the parent's function with the one below
 	 *
